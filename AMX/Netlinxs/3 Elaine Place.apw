@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace [
+
+<!-- Common Elements -->
+<!ELEMENT Identifier (#PCDATA)>
+<!ELEMENT Comments (#PCDATA)>
+<!ELEMENT CreationDate (#PCDATA)>
+
+<!-- Workspace Elements-->
+<!ELEMENT Workspace ( Identifier,
+               CreateVersion,
+               PJS_File?,
+               PJS_ConvertDate?,
+               PJS_CreateDate?,
+               Comments?,
+               Project*)>
+
+<!ATTLIST Workspace 
+      CurrentVersion CDATA   #REQUIRED> 
+
+<!ELEMENT CreateVersion     (#PCDATA)>
+
+
+<!-- Conversion data only: only included for files converted from the old .pjs database -->
+<!ELEMENT PJS_File (#PCDATA)>
+<!ELEMENT PJS_ConvertDate (#PCDATA)>
+<!ELEMENT PJS_CreateDate (#PCDATA)>
+
+<!ELEMENT Project ( Identifier,
+               Designer?,
+               DealerID?,
+               SalesOrder?,
+               PurchaseOrder?,
+               Comments?,
+               System*)>
+
+<!ELEMENT Designer (#PCDATA)>
+<!ELEMENT DealerID (#PCDATA)>
+<!ELEMENT SalesOrder (#PCDATA)>
+<!ELEMENT PurchaseOrder (#PCDATA)>
+
+
+<!ELEMENT System  (  Identifier,
+                 SysID,
+                 TransSerial?,
+                 TransModem?,
+                 TransTCPIP?,
+                 VirtualNetLinxMasterFlag?,
+                 VNMRestoreIPSettings?,
+                 VNMSystemID?,
+                 VNMIPAddress?,
+                 VNMMaskAddress?,
+                 IsAuthenticationEnabled?,
+                 UserName?,
+                 Password?,
+                 Comments?,
+                 File*)>
+
+<!ATTLIST System
+      IsActive   (true | false)   "false"
+      Platform   (Axcess | Netlinx)   "Axcess"
+      Transport   (Serial | Modem | TCPIP) "Serial">
+
+<!ELEMENT SysID (#PCDATA)>
+<!ELEMENT TransSerial (#PCDATA)>
+<!ELEMENT TransModem (#PCDATA)>
+<!ELEMENT TransTCPIP (#PCDATA)>
+<!ELEMENT VirtualNetLinxMasterFlag (#PCDATA)>
+<!ELEMENT VNMRestoreIPSettings (#PCDATA)>
+<!ELEMENT VNMSystemID (#PCDATA)>
+<!ELEMENT VNMIPAddress (#PCDATA)>
+<!ELEMENT VNMMaskAddress (#PCDATA)>
+<!ELEMENT IsAuthenticationEnabled (#PCDATA)>
+<!ELEMENT UserName (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+
+
+<!ELEMENT File ( Identifier,
+               FilePathName,
+               Comments?,
+               DeviceMap*,
+               IRDB*)>
+
+<!ATTLIST File 
+       Type (Source | MasterSrc | Include | Module | AXB | IR | TPD | TP4 | TP5 | XDD | KPD | TKO | AMX_IR_DB | IRN_DB | Other | DUET | TOK | TKN | KPB ) "Other"
+       CompileType (Axcess | Netlinx | None) "None"> 
+
+<!ELEMENT FilePathName	(#PCDATA)>
+                            
+<!ELEMENT DeviceMap (DevName)>
+       <!ATTLIST DeviceMap DevAddr CDATA #REQUIRED>
+
+       <!ELEMENT DevName (#PCDATA)>
+
+<!ELEMENT IRDB    (Property,
+                 DOSName,
+                 UserDBPathName,
+                 Notes)>
+       <!ATTLIST IRDB DBKey CDATA #REQUIRED>
+
+       <!ELEMENT Property (#PCDATA)>
+       <!ELEMENT DOSName (#PCDATA)>
+       <!ELEMENT UserDBPathName (#PCDATA)>
+       <!ELEMENT Notes (#PCDATA)>
+]>
+
+<Workspace CurrentVersion="3.3"><Identifier>3 Elaine Place</Identifier>
+<CreateVersion>3.1</CreateVersion>
+<PJS_File></PJS_File>
+<PJS_ConvertDate></PJS_ConvertDate>
+<PJS_CreateDate></PJS_CreateDate>
+<Comments></Comments>
+<Project><Identifier>Elaine_PLace</Identifier>
+<Designer></Designer>
+<DealerID></DealerID>
+<SalesOrder></SalesOrder>
+<PurchaseOrder></PurchaseOrder>
+<Comments></Comments>
+<System IsActive="true" Platform="Netlinx" Transport="TCPIP"><Identifier>Elaine Place</Identifier>
+<SysID>0</SysID>
+<TransSerial>COM5,38400,8,None,1,None</TransSerial>
+<TransModem></TransModem>
+<TransTCPIP>192.168.1.150:1319:1: NI3100:administrator:password</TransTCPIP>
+<VirtualNetLinxMasterFlag>0</VirtualNetLinxMasterFlag>
+<VNMRestoreIPSettings></VNMRestoreIPSettings>
+<VNMSystemID>1</VNMSystemID>
+<VNMIPAddress>10.0.0.1</VNMIPAddress>
+<VNMMaskAddress>255.255.255.0</VNMMaskAddress>
+<IsAuthenticationEnabled>0</IsAuthenticationEnabled>
+<UserName>YWRtaW5pc3RyYXRvcg</UserName>
+<Password>cGFzc3dvcmQ</Password>
+<Comments></Comments>
+<File CompileType="None" Type="IR"><Identifier>Samsung DVD VCR</Identifier>
+<FilePathName>M:\AMX files 3 Elaine Place\IR Files\IR Files\Samsung DVD VCR.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="DVD_VCR_IR"><DevName>DVD_VCR_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>Samsung LCD TV 46inch</Identifier>
+<FilePathName>M:\AMX files 3 Elaine Place\IR Files\IR Files\Samsung LCD TV 46inch.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="TV_IR"><DevName>TV_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>SAMSUNG,BP1600,AK59-00104K,BluRay Player,1</Identifier>
+<FilePathName>M:\AMX files 3 Elaine Place\IR Files\IR Files\SAMSUNG,BP1600,AK59-00104K,BluRay Player,1.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="DVD_VCR_IR"><DevName>DVD_VCR_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>YAMAHA,RX-V465,RAV293 WR00270,AMPLIFIER,1</Identifier>
+<FilePathName>M:\AMX files 3 Elaine Place\IR Files\IR Files\YAMAHA,RX-V465,RAV293 WR00270,AMPLIFIER,1.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="AMPLIFIER_IR"><DevName>AMPLIFIER_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>FOXTEL15</Identifier>
+<FilePathName>..\IR Files\IR Files\FOXTEL15.IRL</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="FOXTEL2_IR"><DevName>FOXTEL2_IR</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="FOXTEL_IR"><DevName>FOXTEL_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>ASTONE A300a</Identifier>
+<FilePathName>..\IR Files\NI3100 IR Files\ASTONE A300a.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="V_MEDIA_PLAYER"><DevName>V_MEDIA_PLAYER</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>Conia TV,Hand Controller,TV,1</Identifier>
+<FilePathName>..\IR Files\NI3100 IR Files\Conia TV,Hand Controller,TV,1.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="IR_CARD"><DevName>IR_CARD</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="IR"><Identifier>ONKYO,TX-NR626,RC-866M,AMPLIFIER,1</Identifier>
+<FilePathName>..\IR Files\NI3100 IR Files\ONKYO,TX-NR626,RC-866M,AMPLIFIER,1.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="AMPLIFIER_IR"><DevName>AMPLIFIER_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="Source"><Identifier>Pine Crescent V11 23-12-2015D Downloaded</Identifier>
+<FilePathName>Backup downloaded 23 DEC 2015\Pine Crescent V11 23-12-2015D Downloaded.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="MasterSrc"><Identifier>Pine Crescent V11 31-12-2011C</Identifier>
+<FilePathName>Downloaded 10-03-2014\Pine Crescent V11 31-12-2011C.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="Other"><Identifier>Pine Crescent V2 Downloded 10-03-2014</Identifier>
+<FilePathName>Pine Crescent V2 Downloded 10-03-2014.src</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="Include"><Identifier>SNAPI</Identifier>
+<FilePathName>SNAPI.axi</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="Other"><Identifier>Main-Y-Weather</Identifier>
+<FilePathName>Weather AXI\Main-Y-Weather.src</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Module"><Identifier>Y-Weather New</Identifier>
+<FilePathName>Weather AXI\Y-Weather.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="Netlinx" Type="Module"><Identifier>Y-Weather Old</Identifier>
+<FilePathName>Y-Weather.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>Basic TP</Identifier>
+<FilePathName>..\Touch Panels\Basic TP.TP4</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>Chris Iphone 17-09-2014 a</Identifier>
+<FilePathName>..\Touch Panels\Chris Iphone 17-09-2014 a.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="iPhone"><DevName>iPhone</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>IPAD TP 1-1-2016</Identifier>
+<FilePathName>..\Touch Panels\IPAD TP 1-1-2016.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="iPad"><DevName>iPad</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="iPad_Helen"><DevName>iPad_Helen</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>NXT-CV10 Bungalow TP 29-1-2015</Identifier>
+<FilePathName>..\Touch Panels\NXT-CV10 Bungalow TP 29-1-2015.TP4</FilePathName>
+<Comments>Bungalow TP
+</Comments>
+<DeviceMap DevAddr="BUNGALOW_TP"><DevName>BUNGALOW_TP</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>NXT-CV10 Lounge TP 29-1-2015</Identifier>
+<FilePathName>..\Touch Panels\NXT-CV10 Lounge TP 29-1-2015.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="CHRIS_TP"><DevName>CHRIS_TP</DevName>
+</DeviceMap>
+<DeviceMap DevAddr="vLOUNGE_TP"><DevName>vLOUNGE_TP</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>NXT-CV5 Bar Area TP 27-03-2014</Identifier>
+<FilePathName>..\Touch Panels\NXT-CV5 Bar Area TP 27-03-2014.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="Custom [10003:1:1]"><DevName>Custom [10003:1:1]</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>Uni Sydney NXTCV10 AMENDED</Identifier>
+<FilePathName>..\Touch Panels\Uni Sydney NXTCV10 AMENDED.TP4</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="vLOUNGE_TP"><DevName>vLOUNGE_TP</DevName>
+</DeviceMap>
+</File>
+<File CompileType="Netlinx" Type="Source"><Identifier>Y-Weather</Identifier>
+<FilePathName>..\Yahoo Weather\Y-Weather.axs</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="Other"><Identifier>PoolPanel EL</Identifier>
+<FilePathName>..\..\Personal\PoolPane.pgz</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="IR"><Identifier>SAMSUNG,C6900,AK59-00104R,Blu Ray,1</Identifier>
+<FilePathName>R:\Software\Programming\AMX\AMX\IR Files\IR Files\SAMSUNG,C6900,AK59-00104R,Blu Ray,1.irl</FilePathName>
+<Comments></Comments>
+<DeviceMap DevAddr="DVD_VCR_IR"><DevName>DVD_VCR_IR</DevName>
+</DeviceMap>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>AMX ENV-VST-C_iWeather-800x600</Identifier>
+<FilePathName>..\..\Software\Programming\AMX\ENV Stat\AMX ENV-VST-C_iWeather-800x600.TP4</FilePathName>
+<Comments></Comments>
+</File>
+<File CompileType="None" Type="TP4"><Identifier>Modbus_CV12</Identifier>
+<FilePathName>..\..\Software\Programming\AMX\Modbus Stuff\MODBUS_Comm_ver 1.6\Modbus_CV12.TP4</FilePathName>
+<Comments></Comments>
+</File>
+</System>
+</Project>
+</Workspace>
