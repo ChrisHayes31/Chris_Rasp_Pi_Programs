@@ -35,7 +35,7 @@ class Button_press:
     def __init__(self):
         print ("Welcome")
 
-    def inputChng(channel):
+    def my_callback_inputChng(channel):
         print ("Button Pressed - Relay ", channel, " selected ") # echo which button pressed
         print ("**** timer started **** ") # echo timer has started
         start_time = time.time()           # capture the actual time the button was pressed
@@ -69,10 +69,11 @@ class Button_press:
         #GPIO.add_event_detect(Input_Button_1, GPIO.BOTH, callback=my_callback)
         #GPIO.add_event_detect(17, GPIO.FALLING, callback=rel1_Falling_callback)
                 
-GPIO.add_event_detect(Input_Button_1,GPIO.RISING,callback=inputChng(Output_Relay_1),bouncetime=30)  # detect button 1 pressed
-GPIO.add_event_detect(Input_Button_1,GPIO.FALLING,callback=button_1_release(Output_Relay_1),bouncetime=30) # detect button 1 released
-GPIO.add_event_detect(Input_Button_2,GPIO.RISING,callback=button_2_pressed(Output_Relay_2),bouncetime=30)  # detect button 2 pressed
-GPIO.add_event_detect(Input_Button_2,GPIO.FALLING,callback=button_2_release(Output_Relay_2),bouncetime=30) # detect button 2 released    
+#GPIO.add_event_detect(Input_Button_1,GPIO.RISING,callback=inputChng(Output_Relay_1),bouncetime=30)  # detect button 1 pressed
+GPIO.add_event_callback(Input_Button_1,my_callback_inputChng)  # detect button 1 pressed
+#GPIO.add_event_detect(Input_Button_1,GPIO.FALLING,callback=button_1_release(Output_Relay_1),bouncetime=30) # detect button 1 released
+#GPIO.add_event_detect(Input_Button_2,GPIO.RISING,callback=button_2_pressed(Output_Relay_2),bouncetime=30)  # detect button 2 pressed
+#GPIO.add_event_detect(Input_Button_2,GPIO.FALLING,callback=button_2_release(Output_Relay_2),bouncetime=30) # detect button 2 released    
 
 """
 GPIO.add_event_detect(Input_Button_1, GPIO.RISING,  callback = my_callback(Output_Relay_1,Output_Relay_1,Button_pressed), bouncetime = 30)  # detect button 1 pressed

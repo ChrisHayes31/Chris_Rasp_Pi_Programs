@@ -40,7 +40,7 @@ class Button_press:
         print ("**** timer started **** ") # echo timer has started
         start_time = time.time()           # capture the actual time the button was pressed
         elapsed_time == 0                  # ensure elapsed time is reset
-
+"""
     def button_1_release(channel):
         print ("Timer stopped ") # print timer reset
         elapsed_time = time.time() - start_time # capture how long button pressed for
@@ -68,53 +68,13 @@ class Button_press:
         #GPIO.add_event_detect(17, GPIO.RISING, callback=rel1_Rising_callback)
         #GPIO.add_event_detect(Input_Button_1, GPIO.BOTH, callback=my_callback)
         #GPIO.add_event_detect(17, GPIO.FALLING, callback=rel1_Falling_callback)
-                
-GPIO.add_event_detect(Input_Button_1,GPIO.RISING,callback=inputChng(Output_Relay_1),bouncetime=30)  # detect button 1 pressed
-GPIO.add_event_detect(Input_Button_1,GPIO.FALLING,callback=button_1_release(Output_Relay_1),bouncetime=30) # detect button 1 released
-GPIO.add_event_detect(Input_Button_2,GPIO.RISING,callback=button_2_pressed(Output_Relay_2),bouncetime=30)  # detect button 2 pressed
-GPIO.add_event_detect(Input_Button_2,GPIO.FALLING,callback=button_2_release(Output_Relay_2),bouncetime=30) # detect button 2 released    
+ """               
+GPIO.add_event_detect(Input_Button_1, GPIO.RISING, callback=inputChng, bouncetime=200)  # detect button 1 pressed
+#GPIO.add_event_detect(Input_Button_1, GPIO.FALLING, callback=button_1_release, bouncetime=30) # detect button 1 released
+#GPIO.add_event_detect(Input_Button_2, GPIO.RISING, callback=button_2_pressed, bouncetime=30)  # detect button 2 pressed
+#GPIO.add_event_detect(Input_Button_2, GPIO.FALLING, callback=button_2_release, bouncetime=30) # detect button 2 released    
 
-"""
-GPIO.add_event_detect(Input_Button_1, GPIO.RISING,  callback = my_callback(Output_Relay_1,Output_Relay_1,Button_pressed), bouncetime = 30)  # detect button 1 pressed
-GPIO.add_event_detect(Input_Button_1, GPIO.FALLING, callback = my_callback(Output_Relay_1,Output_Relay_2,Button_released), bouncetime = 30) # detect button 1 released
-GPIO.add_event_detect(Input_Button_2, GPIO.RISING,  callback = my_callback(Output_Relay_2,Output_Relay_2,Button_pressed), bouncetime = 30)  # detect button 2 pressed
-GPIO.add_event_detect(Input_Button_2, GPIO.FALLING, callback = my_callback(Output_Relay_2,Output_Relay_2,Button_released), bouncetime = 30) # detect button 2 released    
-"""
 
-while True:
-    try:
-        #GPIO.wait_for_edge(Input_Button_1, GPIO.FALLING) # detect button 1 release
-        #    my_callback=(Output_Relay_1,Output_Relay_1,Button_released)
-        #if (GPIO.add_event_detect(Input_Button_1,GPIO.FALLING, bouncetime=300)): # detect button 1 release
-        #    my_callback=(Output_Relay_1,Output_Relay_1,Button_released)
-                
-        #GPIO.wait_for_edge(Input_Button_1, GPIO.RISING) # detect button 1 pressed
-        #GPIO.wait_for_edge(Input_Button_2, GPIO.FALLING) # detect button 2 released
-        #GPIO.wait_for_edge(Input_Button_2, GPIO.RISING) # detect button 2 pressed        
-            # assign which two relays to be used if 2 relays to be switched
-            #my_callback=(Output_Relay_1,Output_Relay_2,Button_pressed)    # call button pressed sub routine 
-        #if (GPIO.add_event_detect(Input_Button_1,GPIO.RISING, bouncetime=300)): # detect button 1 release
-        #    my_callback=(Output_Relay_1,Output_Relay_1,Button_released)
-        """
-        if (GPIO.wait_for_edge(Input_Button_2,GPIO.FALLING, bouncetime=300)): # detect button 2 release
-            my_callback(Output_Relay_2,Output_Relay_2,Button_released)
-                
-        if (GPIO.wait_for_edge(Input_Button_2,GPIO.RISING, bouncetime=300)): # detect button 2 pressed
-            # assign which two relays to be used if 2 relays to be switched
-            my_callback(Output_Relay_1,Output_Relay_2,Button_pressed)    # call button pressed sub routine
-        """    
-        """
-        # if button_pressed_timer_active true the capture the eplased time
-        if (button_pressed_timer_active == True):
-            if elapsed_time >=10:
-                button_pressed_timer_active == False # turn off the button_pressed_timer_active stop process
-        """        
-    except ValueError:
-        print ("Opps error, re-try....")
-        GPIO.cleanup
-
-    finally:
-        GPIO.cleanup
             
         
 
