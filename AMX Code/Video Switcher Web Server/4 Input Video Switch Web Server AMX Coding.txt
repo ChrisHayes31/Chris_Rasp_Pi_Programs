@@ -1,0 +1,178 @@
+DEFINE_CALL 'SEND VIDEO SERVER STRING' (C_MODE)
+    {
+    SELECT 
+	{
+	ACTIVE (C_MODE = SEC_SERVER1) :
+	    {
+	    // Channel 0
+	    CAM_SEQ = 0
+	    C_SEC_SERVER_BUTTON_FB = SEC_SERVER1
+	    //SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=0',$0D,$0A,$0D,$0A"
+	    SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=0 HTTP/1.1',$0D,$0A,
+	    'User-Agent : WebCamera',$0D,$0A,
+	    'Host: 192.168.1.170:8089',$0D,$0A, 
+	    //'Host: 192.168.1.170:81',$0D,$0A,
+	    'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+	    'DNT: 1',$0D,$0A,
+	    'Connection: Keep-Alive',$0D,$0A,
+	    'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+	    //'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+	    
+	    }
+	ACTIVE (C_MODE = SEC_SERVER2) :
+	    {
+	    // Channel 1
+	    CAM_SEQ = 0
+	    C_SEC_SERVER_BUTTON_FB = SEC_SERVER2
+	    //SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=1',$0D,$0A,$0D,$0A"
+	    
+	    SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=1 HTTP/1.1',$0D,$0A,
+	    'User-Agent : WebCamera',$0D,$0A,
+	    'Host: 192.168.1.170:8089',$0D,$0A, 
+	    //'Host: 192.168.1.170:81',$0D,$0A,
+	    'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+	    'DNT: 1',$0D,$0A,
+	    'Connection: Keep-Alive',$0D,$0A,
+	    'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+	    //'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+	    
+	    }
+	ACTIVE (C_MODE = SEC_SERVER3) :
+	    {
+	    // Channel 2
+	    CAM_SEQ = 0
+	    C_SEC_SERVER_BUTTON_FB = SEC_SERVER3
+	    //SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=2',$0D,$0A,$0D,$0A"
+	    SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=2 HTTP/1.1',$0D,$0A,
+	    'User-Agent : WebCamera',$0D,$0A,
+	    'Host: 192.168.1.170:8089',$0D,$0A, 
+	    //'Host: 192.168.1.170:81',$0D,$0A,
+	    'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+	    'DNT: 1',$0D,$0A,
+	    'Connection: Keep-Alive',$0D,$0A,
+	    'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+	    //'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+	    }
+	ACTIVE (C_MODE = SEC_SERVER4) :
+	    {
+	    // Channel 3
+	    CAM_SEQ = 0
+	    C_SEC_SERVER_BUTTON_FB = SEC_SERVER4
+	    //SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=3',$0D,$0A,$0D,$0A"
+	    SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=3 HTTP/1.1',$0D,$0A,
+	    'User-Agent : WebCamera',$0D,$0A,
+	    'Host: 192.168.1.170:8089',$0D,$0A, 
+	    //'Host: 192.168.1.170:81',$0D,$0A,
+	    'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+	    'DNT: 1',$0D,$0A,
+	    'Connection: Keep-Alive',$0D,$0A,
+	    'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+	    //'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+	    }
+	ACTIVE (C_MODE = SEC_QUAD) :
+	    {
+	    // QUAD SWITCH
+	    CAM_SEQ = 1
+	    C_SEC_SERVER_BUTTON_FB = 0
+	    //SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=271',$0D,$0A,$0D,$0A"
+	    SEND_STRING dvVideoIPClient,"'GET /SetChannel.cgi?Channel=271 HTTP/1.1',$0D,$0A,
+	    'User-Agent : WebCamera',$0D,$0A,
+	    'Host: 192.168.1.170:8089',$0D,$0A,  
+	    //'Host: 192.168.1.170:81',$0D,$0A,
+	    'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+	    'DNT: 1',$0D,$0A,
+	    'Connection: Keep-Alive',$0D,$0A,
+	    'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+	    //'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+	    }
+	//CALL 'SEND VIDEO SERVER STRING' (SEC_CAM_SET_MOTION)
+	ACTIVE (C_MODE = SEC_CAM_SET_MOTION) :
+	    {
+	    //CAM_SEQ = 1
+	    IF (SEC_CAM_MOTION = 0) 
+		{
+		                  //SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd = SetMotionDetect.cgi&Enable=false HTTP/1.1',$0D,$0A,
+		SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd=SetMotionDetect.cgi&Enable=false&EnableMotion=false&submit=OK HTTP/1.1',$0D,$0A,
+		//SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd=SetMotionDetect.cgi&Enable=false&EnableMotion=false HTTP/1.1',$0D,$0A,
+		'User-Agent : WebCamera',$0D,$0A,
+		'Host: 192.168.1.170:8089',$0D,$0A,  
+		//'Host: 192.168.1.170:81',$0D,$0A,
+		'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+		'DNT: 1',$0D,$0A,
+		'Connection: Keep-Alive',$0D,$0A,
+		'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+		//'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+		}
+	    IF (SEC_CAM_MOTION = 1) 
+		{
+	                           //SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd = SetMotionDetect.cgi&Enable=true HTTP/1.1',$0D,$0A,
+		//SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd=SetMotionDetect.cgi&Enable=true&EnableMotion=true&submit=OK HTTP/1.1',$0D,$0A,
+		SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd=SetMotionDetect.cgi&Enable=true&EnableMotion=true HTTP/1.1',$0D,$0A,
+		'User-Agent : WebCamera',$0D,$0A,
+		'Host: 192.168.1.170:8089',$0D,$0A,  
+		//'Host: 192.168.1.170:81',$0D,$0A,
+		'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+		'DNT: 1',$0D,$0A,
+		'Connection: Keep-Alive',$0D,$0A,
+		'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+		//'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+		}
+	    }	    
+	    //CALL 'SEND VIDEO SERVER STRING' (SEC_TAKE_PIC)
+	ACTIVE (C_MODE = SEC_TAKE_PIC) :
+	    {
+	    SEND_STRING dvVideoIPClient,"'GET /Simple/motion.htm HTTP/1.1',$0D,$0A,
+	    //SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd=SetMotionDetect.cgi&submit=OK HTTP/1.1',$0D,$0A,
+	    //SEND_STRING dvVideoIPClient,"'GET /Cmd.cgi?Cmd=SetMotionDetect.cgi&Enable=true&EnableMotion=true HTTP/1.1',$0D,$0A,
+	    //SEND_STRING dvVideoIPClient,"'GET /GetMotionDetect.cgi?JsVar=sMotion HTTP/1.1',$0D,$0A,
+	    //SEND_STRING dvVideoIPClient,"'GET /Simple/motion.htm HTTP/1.1',$0D,$0A,
+	    'User-Agent : WebCamera',$0D,$0A,
+	    'Host: 192.168.1.170:8089',$0D,$0A,  
+	               //'Host: 192.168.1.170:81',$0D,$0A,
+	    'If-Modified-Since: Mon, 10 Feb 2003 14:07:13 GMT; length=0',$0D,$0A,
+	    'DNT: 1',$0D,$0A,
+	    'Connection: Keep-Alive',$0D,$0A,
+	    'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=8089',$0D,$0A,$0D,$0A" 
+	             //'Cookie: N=; U=http%253A//192.168.1.170%253A81; D=; P=81',$0D,$0A,$0D,$0A"
+	    }	    
+	}
+    }
+
+DEFINE_CALL 'VIDEO IP SERVER FUNCTIONS' (INPUT_CHANNEL,MODE)
+    {
+    IF (bSERVEROnline = FALSE)
+	{
+	IP_SERVER_OPEN (dvVideoIPServer.PORT, nIPPort_Video_Server, IP_TCP) //8016,1
+	bSERVERKeepOpen = TRUE
+	}
+    IF (bClientOnline = FALSE)
+	{
+	//IP_CLIENT_OPEN (dvVideoIPClient.PORT,'192.168.1.170',nIPPort_Video_Client,IP_TCP) //192.168.1.102
+	IP_CLIENT_OPEN (dvVideoIPClient.PORT,'192.168.1.170',nIPPort_Video_Client,IP_TCP) //192.168.1.102
+	bClientKeepOpen = TRUE
+	}
+    //CAM_SEQ = 0
+    CALL 'SEND VIDEO SERVER STRING' (INPUT_CHANNEL)
+    }
+
+DEFINE_CALL 'RESTART VIDEO WEB SERVER' (MODE)
+    {
+    SELECT
+	{
+	ACTIVE (MODE = 1) : 
+	    {
+	    VIDEO_SERVER = 1
+	    IF (bClientOnline = FALSE)
+		{
+		IP_CLIENT_OPEN(dvVideoIPServer.PORT,'192.168.1.170',nIPPort_Video_Client,IP_TCP)
+		bClientKeepOpen = TRUE
+		}
+	    }
+	ACTIVE (MODE = 0) : 
+	    {
+	    VIDEO_SERVER = 0
+	    IP_CLIENT_CLOSE(dvVideoIPServer.PORT)
+	    //bClientKeepOpen = FALSE
+	    }
+	}
+    }
