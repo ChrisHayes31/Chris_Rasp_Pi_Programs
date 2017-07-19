@@ -16,7 +16,7 @@ import socket
 # (signified by the empty string), but the client must specify an address to
 # connect to. Here, we're connecting to the server on the same machine
 # (127.0.0.1 is the "loopback" address).
-SERVER_ADDRESS = '192.168.1.125'
+SERVER_ADDRESS = '192.168.1.107'
 SERVER_PORT = 22222
 
 # Create the socket
