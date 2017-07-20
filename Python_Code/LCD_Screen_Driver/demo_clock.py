@@ -3,13 +3,13 @@
 # Created by Matthew Timmons-Brown for The Raspberry Pi Guy YouTube channel
 
 # Import necessary libraries for communication and display use
-import lcddriver
+import I2C_LCD_driver
 import time
 import datetime
 
 # Load the driver and set it to "display"
 # If you use something from the driver library use the "display." prefix first
-display = lcddriver.lcd()
+display = I2C_LCD_driver.lcd()
 
 try:
     print("Writing to display")
