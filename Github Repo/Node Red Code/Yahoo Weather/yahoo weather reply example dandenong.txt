@@ -1,0 +1,149 @@
+{
+ "query": {
+  "count": 1,
+  "created": "2017-09-01T01:42:42Z",
+  "lang": "en-US",
+  "results": {
+   "channel": {
+    "units": {
+     "distance": "mi",
+     "pressure": "in",
+     "speed": "mph",
+     "temperature": "F"
+    },
+    "title": "Yahoo! Weather - Melbourne, VIC, AU",
+    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-1101573/",
+    "description": "Yahoo! Weather for Melbourne, VIC, AU",
+    "language": "en-us",
+    "lastBuildDate": "Fri, 01 Sep 2017 11:42 AM AEST",
+    "ttl": "60",
+    "location": {
+     "city": "Melbourne",
+     "country": "Australia",
+     "region": " VIC"
+    },
+    "wind": {
+     "chill": "57",
+     "direction": "360",
+     "speed": "11"
+    },
+    "atmosphere": {
+     "humidity": "52",
+     "pressure": "1017.0",
+     "rising": "0",
+     "visibility": "16.1"
+    },
+    "astronomy": {
+     "sunrise": "6:41 am",
+     "sunset": "5:58 pm"
+    },
+    "image": {
+     "title": "Yahoo! Weather",
+     "width": "142",
+     "height": "18",
+     "link": "http://weather.yahoo.com",
+     "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+    },
+    "item": {
+     "title": "Conditions for Melbourne, VIC, AU at 11:00 AM AEST",
+     "lat": "-37.985321",
+     "long": "145.218216",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-1101573/",
+     "pubDate": "Fri, 01 Sep 2017 11:00 AM AEST",
+     "condition": {
+      "code": "28",
+      "date": "Fri, 01 Sep 2017 11:00 AM AEST",
+      "temp": "58",
+      "text": "Mostly Cloudy"
+     },
+     "forecast": [
+      {
+       "code": "28",
+       "date": "01 Sep 2017",
+       "day": "Fri",
+       "high": "61",
+       "low": "37",
+       "text": "Mostly Cloudy"
+      },
+      {
+       "code": "28",
+       "date": "02 Sep 2017",
+       "day": "Sat",
+       "high": "58",
+       "low": "50",
+       "text": "Mostly Cloudy"
+      },
+      {
+       "code": "12",
+       "date": "03 Sep 2017",
+       "day": "Sun",
+       "high": "61",
+       "low": "49",
+       "text": "Rain"
+      },
+      {
+       "code": "39",
+       "date": "04 Sep 2017",
+       "day": "Mon",
+       "high": "52",
+       "low": "43",
+       "text": "Scattered Showers"
+      },
+      {
+       "code": "23",
+       "date": "05 Sep 2017",
+       "day": "Tue",
+       "high": "51",
+       "low": "40",
+       "text": "Breezy"
+      },
+      {
+       "code": "39",
+       "date": "06 Sep 2017",
+       "day": "Wed",
+       "high": "52",
+       "low": "45",
+       "text": "Scattered Showers"
+      },
+      {
+       "code": "30",
+       "date": "07 Sep 2017",
+       "day": "Thu",
+       "high": "56",
+       "low": "46",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "12",
+       "date": "08 Sep 2017",
+       "day": "Fri",
+       "high": "54",
+       "low": "44",
+       "text": "Rain"
+      },
+      {
+       "code": "30",
+       "date": "09 Sep 2017",
+       "day": "Sat",
+       "high": "53",
+       "low": "43",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "32",
+       "date": "10 Sep 2017",
+       "day": "Sun",
+       "high": "56",
+       "low": "40",
+       "text": "Sunny"
+      }
+     ],
+     "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Cloudy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Fri - Mostly Cloudy. High: 61Low: 37\n<BR /> Sat - Mostly Cloudy. High: 58Low: 50\n<BR /> Sun - Rain. High: 61Low: 49\n<BR /> Mon - Scattered Showers. High: 52Low: 43\n<BR /> Tue - Breezy. High: 51Low: 40\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-1101573/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n<BR />\n]]>",
+     "guid": {
+      "isPermaLink": "false"
+     }
+    }
+   }
+  }
+ }
+}

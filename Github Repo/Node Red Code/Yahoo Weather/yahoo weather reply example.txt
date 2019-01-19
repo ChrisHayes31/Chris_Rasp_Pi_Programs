@@ -1,0 +1,175 @@
+"{"query":
+	{"count":1,"created":"2017-08-31T04:50:48Z","lang":"en-US",
+	   "results":
+		{"channel":
+			{"units":
+				{"distance":"mi","pressure":"in","speed":"mph","temperature":"F"},
+			"title":
+				"Yahoo! Weather - Sydney, NSW, AU","link":"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-1105779/","description":"Yahoo! Weather for Sydney, NSW, AU","language":"en-us","lastBuildDate":"Thu, 31 Aug 2017 02:50 PM AEST","ttl":"60",
+			"location":
+				{"city":"Sydney","country":"Australia","region":" NSW"},
+			"wind":
+				{"chill":"57","direction":"180","speed":"22"},
+			"atmosphere":
+				{"humidity":"46","pressure":"1021.0","rising":"0","visibility":"16.1"},
+			"astronomy":
+				{"sunrise":"6:15 am","sunset":"5:37 pm"},
+			"image":
+				{"title":"Yahoo! Weather","width":"142","height":"18","link":"http://weather.yahoo.com","url":"http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"},
+			"item":
+				{"title":"Conditions for Sydney, NSW, AU at 02:00 PM AEST","lat":"-33.856281","long":"151.020966","link":"htt..."
+
+
+
+
+
+
+{
+ "query": {
+  "count": 1,
+  "created": "2017-08-31T09:05:35Z",
+  "lang": "en-US",
+  "results": {
+   "channel": {
+    "units": {
+     "distance": "mi",
+     "pressure": "in",
+     "speed": "mph",
+     "temperature": "F"
+    },
+    "title": "Yahoo! Weather - Nome, AK, US",
+    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/",
+    "description": "Yahoo! Weather for Nome, AK, US",
+    "language": "en-us",
+    "lastBuildDate": "Thu, 31 Aug 2017 01:05 AM AKDT",
+    "ttl": "60",
+    "location": {
+     "city": "Nome",
+     "country": "United States",
+     "region": " AK"
+    },
+    "wind": {
+     "chill": "36",
+     "direction": "338",
+     "speed": "14"
+    },
+    "atmosphere": {
+     "humidity": "65",
+     "pressure": "997.0",
+     "rising": "0",
+     "visibility": "16.1"
+    },
+    "astronomy": {
+     "sunrise": "7:40 am",
+     "sunset": "10:22 pm"
+    },
+    "image": {
+     "title": "Yahoo! Weather",
+     "width": "142",
+     "height": "18",
+     "link": "http://weather.yahoo.com",
+     "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+    },
+    "item": {
+     "title": "Conditions for Nome, AK, US at 12:00 AM AKDT",
+     "lat": "64.499474",
+     "long": "-165.405792",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/",
+     "pubDate": "Thu, 31 Aug 2017 12:00 AM AKDT",
+     "condition": {
+      "code": "33",
+      "date": "Thu, 31 Aug 2017 12:00 AM AKDT",
+      "temp": "41",
+      "text": "Mostly Clear"
+     },
+     "forecast": [
+      {
+       "code": "30",
+       "date": "31 Aug 2017",
+       "day": "Thu",
+       "high": "46",
+       "low": "38",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "28",
+       "date": "01 Sep 2017",
+       "day": "Fri",
+       "high": "47",
+       "low": "41",
+       "text": "Mostly Cloudy"
+      },
+      {
+       "code": "30",
+       "date": "02 Sep 2017",
+       "day": "Sat",
+       "high": "47",
+       "low": "40",
+       "text": "Partly Cloudy"
+      },
+      {
+       "code": "34",
+       "date": "03 Sep 2017",
+       "day": "Sun",
+       "high": "51",
+       "low": "40",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "34",
+       "date": "04 Sep 2017",
+       "day": "Mon",
+       "high": "54",
+       "low": "43",
+       "text": "Mostly Sunny"
+      },
+      {
+       "code": "28",
+       "date": "05 Sep 2017",
+       "day": "Tue",
+       "high": "54",
+       "low": "43",
+       "text": "Mostly Cloudy"
+      },
+      {
+       "code": "26",
+       "date": "06 Sep 2017",
+       "day": "Wed",
+       "high": "55",
+       "low": "45",
+       "text": "Cloudy"
+      },
+      {
+       "code": "26",
+       "date": "07 Sep 2017",
+       "day": "Thu",
+       "high": "55",
+       "low": "45",
+       "text": "Cloudy"
+      },
+      {
+       "code": "12",
+       "date": "08 Sep 2017",
+       "day": "Fri",
+       "high": "51",
+       "low": "50",
+       "text": "Rain"
+      },
+      {
+       "code": "39",
+       "date": "09 Sep 2017",
+       "day": "Sat",
+       "high": "52",
+       "low": "41",
+       "text": "Scattered Showers"
+      }
+     ],
+     "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/33.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Mostly Clear\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Thu - Partly Cloudy. High: 46Low: 38\n<BR /> Fri - Mostly Cloudy. High: 47Low: 41\n<BR /> Sat - Partly Cloudy. High: 47Low: 40\n<BR /> Sun - Mostly Sunny. High: 51Low: 40\n<BR /> Mon - Mostly Sunny. High: 54Low: 43\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n<BR />\n]]>",
+     "guid": {
+      "isPermaLink": "false"
+     }
+    }
+   }
+  }
+ }
+}
