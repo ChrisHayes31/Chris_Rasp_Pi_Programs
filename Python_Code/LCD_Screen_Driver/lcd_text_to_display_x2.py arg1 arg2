@@ -1,0 +1,13 @@
+import I2C_LCD_driver
+import time
+import sys
+mylcd = I2C_LCD_driver.lcd()
+text_to_display = sys.arg1
+line_to_display = sys.arg2
+
+while True:
+    mylcd.lcd_display_string(arg1, arg2)
+    #mylcd.lcd_display_string("Time: %s" %time.strftime("%H:%M:%S"), 1)
+    
+    #mylcd.lcd_display_string("Date: %s" %time.strftime("%m/%d/%Y"), 2)
+    

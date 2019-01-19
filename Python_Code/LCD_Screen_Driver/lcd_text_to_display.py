@@ -8,47 +8,10 @@ mylcd.lcd_clear() #clear screen first
 sleep(0.4)
 
 total = len(sys.argv) # nmumber of arguments in string
-lcd_text = str(sys.argv) # text to print
-line_to_display = (sys.argv[total-1]) # get the line number from end argument
-i = 0
-msg_line = ""
-
-#for i in range(1,total-1):
-
-#msg_line = "%s:%d" % (lcd_text.name, lcd_text.count)
-
-#msg_line += msg_line + str(line_text[i])
-#  "%s:%d" % (obj1.name, obj1.count)
-#msg_line = msg_line + line_text[i]
-    
-#i = 0
-#while i <= total:
-    #mess1[i] = sys.argv[i]
-#    i += 1
-#    line_text = line_text + sys.argvline_text[i]
-    
-#var newMsg = {payload:loc_msg.concat(" ", text_msg, "|", line_number)}; 
+msg1 = sys.argv[1:] # get everything after python script name
+text_line, line_number = msg1 # strip out the text and the line ref
 
 while True:
-    #mylcd.lcd_display_string(arg1, arg2)
-    #mylcd.lcd_display_string(msg_line,line_to_display)
-    mylcd.lcd_display_string(lcd_text[1],1)
-    mylcd.lcd_display_string(lcd_text[2],2)
-    #mylcd.lcd_display_string("line 3",3)
-    #mylcd.lcd_display_string("line 4",4)
-    
-    #mylcd.lcd_display_string(lcd_text,int(line_to_display))
-    #mylcd.lcd_display_string(lcd_text,int(line_to_display))
-    
-    #mylcd.lcd_display_string(lcd_text2,3)
-    #mylcd.lcd_display_string(line_to_display,4)
-    #mylcd.lcd_display_string(lcd_text,int(line_to_display)) #works
-
-    
-    #mylcd.lcd_display_string(lcd_text,line_to_display)
-    #mylcd.lcd_display_string(text_to_display, line_to_display)
-    #mylcd.lcd_display_string("Time: %s" %time.strftime("%H:%M:%S"), 1)
-    
-    #mylcd.lcd_display_string("Date: %s" %time.strftime("%m/%d/%Y"), 2)
+    mylcd.lcd_display_string(text_line,int(line_number))
     sleep(0.4)
     

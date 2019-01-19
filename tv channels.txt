@@ -1,0 +1,165 @@
+(* FOXTEL & TV CHANNELS *)
+TV1          = 101
+TV2          = 149
+ABC          = 102
+UKTV         = 103
+UKTV2        = 150
+SBS          = 104
+ARENA        = 105
+ARENA2       = 151
+LIFESTYLE    = 106
+LIFESTYLE2   = 152
+SEVEN        = 107
+SEVEN_MATE   = 188
+FOX8         = 108
+FOXTWO       = 153
+NINE         = 109
+TEN          = 110
+FUNNY        = 111
+FUNNY2       = 154
+UNIVERSAL    = 112
+UNIVERSAL2   = 155
+FOX_CLASSICS = 113
+FOX_CLASSICS2= 156
+SHOWCASE     = 114
+SHOWCASE2    = 158
+BOX_SETS     = 115
+BINGE        = 116
+BBC_FIRST    = 117
+THIRTEEN     = 118
+THIRTEEN2    = 160
+FX           = 119
+FX2          = 161
+AE           = 122
+FOOD         = 127
+FOOD2        = 164
+HOME         = 128
+YOU          = 129
+YOU2         = 165
+TLC          = 130
+TLC2         = 166
+ELEVEN       = 131
+ARTS         = 133
+KIDS         = 134
+GO           = 139
+VICELAND     = 142
+SBS_FOOD     = 143
+NITV         = 144
+
+BOX_OFFICE   = 120
+COMEDY       = 121
+COMEDY2      = 162
+
+ENT          = 125
+STYLE        = 126
+
+HALLMARK     = 116
+ABC2         = 126
+OVATION      = 125
+FASHION_TV   = 123
+SYFI         = 123
+SYFI2        = 163
+MTV          = 124
+AURORA       = 173
+TVSN         = 176
+EXPO         = 177
+ACC          = 182
+AURORA       = 183
+ 
+(*MOVIES*)
+MORE          = 400
+PREMIERE      = 401
+PREMIERE2     = 411
+MASTERPIECE   = 402
+DISNEY        = 404
+DISNEY2       = 415
+FAMILY        = 405
+FAMILY2       = 414
+ACTION        = 406
+ACTION2       = 412
+COMEDY_MOVIES = 407
+ROMANCE       = 408
+THRILLER      = 409
+ 
+WORLD_MOVIES  = 430
+
+(*SPORTS*)
+FOX_SPORT_NEWS = 500
+FOX_SPORTS1    = 501
+FOX_NRL        = 502
+FOX_SPORTS3    = 503
+FOX_AFL        = 504
+FOX_SPORT_NEWS = 513
+EURO_SPORTS    = 511
+ESPN           = 508
+ESPN2          = 509
+
+(*NEWS AND DOCOS*)
+SKY_NEWS       = 601
+FOX_BUSINESS   = 602
+WEATHER        = 603
+FOX_NEWS       = 604
+CNN            = 605
+DISCOVERY      = 608
+DISCOVERY2     = 640
+NATIONAL_GEO   = 610
+NATIONAL_GEO2  = 641
+ANIMAL         = 615
+A1             = 636
+DISC_TRAVEL    = 646
+DISC_HEALTH    = 640
+SBS_NEWS       = 648
+BLOOMBERG      = 650
+CNBC           = 644
+CPAC           = 648
+HISTORY        = 612
+DISC_SCIENCE   = 638
+
+CRIME        = 613
+ANIMAL       = 615
+WILD         = 616
+PEOPLE       = 628
+TURBO        = 634
+TURBO2       = 635
+ABC_NEWS     = 642
+BBC_NEWS     = 649
+
+
+(*KIDS*)
+NICKELODEON  = 701
+NICKJR       = 703
+CEEBIES      = 705
+DISNEY       = 707
+XD           = 708
+PLAYHOUSE    = 709
+CARTOON      = 713
+BOOMERANG    = 715
+xxxxx        = 718
+ME           = 723
+
+GUIDE        = 999
+
+(*MUSIC*)
+CHANNELV     = 801
+CHANNELV2    = 802
+MTV_MUSIC    = 803
+MTV_DANCE    = 804
+MUSIC_MAX    = 805
+SMOOTH       = 806
+COUNTRY      = 815
+TUNES        = 830
+EASY         = 843
+RELAX        = 844
+SBSAM        = 867
+SBSFM        = 868
+ABC_NATIONAL = 875
+ABCRADIO     = 877
+ABC774       = 878
+ABCVIC       = 879
+CLASSICFM    = 882
+TRIPLEJ      = 883
+DIGG         = 884
+DIGGJAZZ     = 885
+
+RAI          = 942
+ANTENNA      = 942
